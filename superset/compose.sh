@@ -3,7 +3,7 @@ rebuild(){
  
 }
 up(){
-  docker-compose -f docker-compose-non-dev.yml up
+  docker compose -f docker-compose-non-dev.yml up
 
 }
 $@
