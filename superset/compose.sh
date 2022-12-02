@@ -1,6 +1,7 @@
 # clone or update
-git clone https://github.com/apache/superset.git
+curl https://raw.githubusercontent.com/davidkhala/davidkhala/main/git.sh | bash -s update-clone https://github.com/apache/superset.git
 
+cd superset
 rebuild(){
   docker compose build --force-rm
  
