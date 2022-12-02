@@ -1,3 +1,6 @@
+# clone or update
+git clone https://github.com/apache/superset.git
+
 rebuild(){
   docker compose build --force-rm
  
