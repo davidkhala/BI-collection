@@ -2,10 +2,11 @@
 For SAS Stats/ML
 - How many SAS models running in production? 
 - What kind of model do you have?  regressions, decision trees, Neural Nets, time series forecasting, etc
+  - whether the models have manually fine-tuned hyperparameters, or if they were generated with the default settings?
 - Is there any MLOps or some model governance?
  - How often do you update them (re-train, evaluate,etc)
  - Are they running in batch (monthly, daily, hourly)? 
-- Are they integrated to some app?
+- Are they integrated to some apps?
 - How the data is prepared/transformed to be used in the models? 
 
 
