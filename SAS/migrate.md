@@ -1,3 +1,14 @@
+# Qualification questions
+For SAS Stats/ML
+- How many SAS models running in production? 
+- What kind of model do you have?  regressions, decision trees, Neural Nets, time series forecasting, etc
+- Is there any MLOps or some model governance?
+ - How often do you update them (re-train, evaluate,etc)
+ - Are they running in batch (monthly, daily, hourly)? 
+- Are they integrated to some app?
+- How the data is prepared/transformed to be used in the models? 
+
+
 # Strategy
 insight from https://www.databricks.com/blog/2022/09/07/four-steps-migrate-sas-data-warehouse-lakehouse.html
 
