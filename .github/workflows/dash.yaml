@@ -1,0 +1,14 @@
+name: dash
+on: push
+jobs:
+  mini-app:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@main
+    - run: |
+            pip install dash
+            pip install pandas
+    - run: python Dash/app.py
+      timeout-minutes: 1
+
+      
