@@ -8,7 +8,7 @@ jobs:
     - run: |
             pip install dash
             pip install pandas
-    - run: python Dash/app.py
+    - run: python lib/Dash/app.py
       timeout-minutes: 1
 
       
