@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "davidkhala.dash"
+version = "0.0.0"
+description = "plotly dash"
+authors = ["David Liu <david-khala@hotmail.com>"]
+license = "Apache"
+readme = "README.md"
+packages = [{ include = "davidkhala" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+dash = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+pandas = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

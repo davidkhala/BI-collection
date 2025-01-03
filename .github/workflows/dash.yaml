@@ -3,12 +3,12 @@ on: push
 jobs:
   mini-app:
     runs-on: ubuntu-latest
+    env:
+      container: dash
     steps:
     - uses: actions/checkout@main
-    - run: |
-            pip install dash
-            pip install pandas
-    - run: python lib/Dash/app.py
-      timeout-minutes: 1
-
+    - run: export DOCKER_BUILDKIT=1
+    - run: docker build -t dash:latest lib/Dash/davidkhala/dash/app
+    - run: docker run --name $container -d dash:latest
+    - run: curl https://raw.githubusercontent.com/davidkhala/containers/refs/heads/main/cli/health.sh | bash -s wait-until-healthy $container
       
