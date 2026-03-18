@@ -1,4 +1,4 @@
-# BI and Analytic
+# BI
 
 [Power BI](https://github.com/davidkhala/power/tree/main/bi)
 
